@@ -3066,11 +3066,11 @@ Aircrack-ng Basic
 airmon-ng check kill                                                    #Disable process that could cause troubles in wifi hacking
 airmon-ng start wlan0                                                   #Put wlan0 interface on monitor mode
 airmon-ng stop wlan0mon                                                 #Put wlan0 interface back to normal
-airodump-ng wlan0mon                                                   #Start packet capture on wlan0mon
-airodump-ng wlan0mon --channel <n> --essid <Wifi-Name>              #Filter packet capture with channel and Wifi ESSID
-airodump-ng wlan0mon --channel <n> --essid <Wifi-Name> -w filename#Record packet capture in <filename>
-airodump-ng -r file.pcap                                               #Reads file.pcap as in airodump-ng
-aireplay-ng --deauth <n> -a <BSSID> wlan1mon                          #Send DoS attack on BSSID with n packets. 0 means infinity loop.
+airodump-ng wlan0mon                                                    #Start packet capture on wlan0mon
+airodump-ng wlan0mon --channel <n> --essid <Wifi-Name>                  #Filter packet capture with channel and Wifi ESSID
+airodump-ng wlan0mon --channel <n> --essid <Wifi-Name> -w filename      #Record packet capture in <filename>
+airodump-ng -r file.pcap                                                #Reads file.pcap as in airodump-ng
+aireplay-ng --deauth <n> -a <BSSID> wlan1mon                            #Send DoS attack on BSSID with n packets. 0 means infinity loop.
 
 
 Attacking WPA2 PSK (The old way) 
